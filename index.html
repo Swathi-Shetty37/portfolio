@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management</title>
+  <meta name="title" content="Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management">
+  <meta name="description"
+    content="Portfolio of Swathi Shetty, MCA student at Poornaprajna Institute of Management (PIM) Udupi specializing in software development, web technology, and problem solving.">
+  <meta name="keywords"
+    content="Swathi Shetty, MCA, Poornaprajna Institute of Management, PIM Udupi, Web Developer, Software Developer, Java, Python, HTML, CSS, SQL">
+  <meta name="author" content="Swathi Shetty">
+  <meta name="theme-color" content="#4F46E5">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swathi-shetty37.github.io/">
+  <meta property="og:title" content="Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management">
+  <meta property="og:description"
+    content="Portfolio of Swathi Shetty, MCA student at PIM Udupi specializing in software development, web technology, and problem solving.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management">
+  <meta property="twitter:description"
+    content="Portfolio of Swathi Shetty, MCA student at PIM Udupi specializing in software development.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Swathi Shetty - Home">
+        <span class="logo-avatar">SS</span>
+        <div class="brand-text">
+          <span class="brand-name">Swathi Shetty</span>
+          <span class="brand-badge">MCA Student</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons (Theme Toggle & Resume) -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- View Resume CTA -->
+        <button id="resume-open-btn" class="btn btn-secondary btn-sm" aria-label="Open Resume modal">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="brand-text">
+          <span class="brand-name">Swathi Shetty</span>
+          <span class="brand-badge">MCA Student</span>
+        </div>
+        <button id="mobile-drawer-close" class="icon-btn" aria-label="Close mobile menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills & Expertise</a></li>
+          <li><a href="#education" class="mobile-nav-link">Academic Education</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+          <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+          <li><a href="#interests" class="mobile-nav-link">Interests & Goals</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact & Links</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button id="mobile-resume-btn" class="btn btn-primary btn-full">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <span>View Detailed Resume</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- 1. Hero Showcase Section (Text-Focused Introduction) -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <div class="container hero-container">
+        <!-- Floating Pill Indicator -->
+        <div class="hero-status-pill">
+          <span class="status-indicator-dot"></span>
+          <span class="status-text">First-Year MCA Student &bull; Poornaprajna Institute of Management</span>
+        </div>
+
+        <!-- Headline & Name -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Swathi Shetty</span>
+        </h1>
+        <p class="hero-headline">
+          Master of Computer Applications (MCA) Candidate
+        </p>
+
+        <!-- Elevator Pitch / Biography -->
+        <blockquote class="hero-statement">
+          &ldquo;I am an MCA student interested in software development, web technology, and solving problems through
+          code.&rdquo;
+        </blockquote>
+
+        <!-- Location & Campus Tag -->
+        <div class="hero-meta-badges">
+          <span class="meta-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Udupi, Karnataka, India
+          </span>
+          <span class="meta-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            PIM Udupi (2026 – 2028)
+          </span>
+          <span class="meta-badge highlight-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Aspiring Software Developer
+          </span>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-work">
+            <span>Explore Work</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
+            <span>Get in Touch</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-secondary" id="hero-resume-trigger">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </button>
+        </div>
+
+        <!-- Quick Social Links Bar -->
+        <div class="hero-social-strip">
+          <span class="social-label">Connect:</span>
+          <a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer" class="social-pill"
+            aria-label="GitHub Profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank" rel="noopener noreferrer"
+            class="social-pill" aria-label="LinkedIn Profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:swathishettyswathi49@gmail.com" class="social-pill" aria-label="Send email to Swathi Shetty">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>swathishettyswathi49@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me & Academic Context -->
+    <section id="about" class="section-wrapper" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 id="about-heading" class="section-title">Academic Journey & Purpose</h2>
+          <p class="section-subtitle">Dedicated to mastering computer applications and building purposeful digital
+            solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Narrative Card -->
+          <div class="card about-story-card">
+            <div class="about-story-header">
+              <div class="quote-icon-bubble" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="about-card-title">Authentic Academic Foundation</h3>
+                <p class="about-card-role">MCA Student &bull; Poornaprajna Institute of Management (PIM)</p>
+              </div>
+            </div>
+
+            <p class="story-paragraph">
+              I am currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at the prestigious
+              <strong>Poornaprajna Institute of Management (PIM)</strong> in Udupi, Karnataka (2026 – 2028). My academic
+              specialization centers on <em>Computer Applications & Software Development</em>.
+            </p>
+            <p class="story-paragraph">
+              With a grounded and curious engineering mindset, I am passionate about exploring how software powers
+              everyday systems. My objective is to bridge fundamental computer science theory—such as Object-Oriented
+              Programming, relational databases, and algorithm design—with modern web technologies.
+            </p>
+            <p class="story-paragraph">
+              I believe in rigorous foundational learning, transparent skill development, and writing clean,
+              maintainable code. When tackling technical challenges, I approach each problem step-by-step with
+              persistence and structured analytical thinking.
+            </p>
+
+            <div class="about-highlights-row">
+              <div class="highlight-chip">
+                <span class="chip-dot"></span>
+                <span><strong>Specialization:</strong> Software Development</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-dot"></span>
+                <span><strong>Languages Spoken:</strong> English, Kannada</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-dot"></span>
+                <span><strong>Mindset:</strong> Continuous Learner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Metrics & Quick Facts -->
+          <div class="about-stats-container">
+            <div class="stat-card pastel-card-purple">
+              <div class="stat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-number">MCA</div>
+              <div class="stat-title">Master of Computer Applications</div>
+              <div class="stat-desc">Poornaprajna Institute of Management (PIM), Udupi (2026–2028)</div>
+            </div>
+
+            <div class="stat-card pastel-card-blue">
+              <div class="stat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="stat-number">7+</div>
+              <div class="stat-title">Core Languages Studied</div>
+              <div class="stat-desc">Java, Python, C, R, PHP, HTML, and SQL with verified ratings</div>
+            </div>
+
+            <div class="stat-card pastel-card-mint">
+              <div class="stat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="stat-number">1</div>
+              <div class="stat-title">National Certification</div>
+              <div class="stat-desc">Software Testing via Swayam NPTL (2026)</div>
+            </div>
+
+            <div class="stat-card pastel-card-peach">
+              <div class="stat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <div class="stat-number">100%</div>
+              <div class="stat-title">Factual & Transparent</div>
+              <div class="stat-desc">Accurate self-assessments without inflated ratings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technical Skills & Programming Proficiency -->
+    <section id="skills" class="section-wrapper bg-subtle" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 id="skills-heading" class="section-title">Programming Languages & Verified Skills</h2>
+          <p class="section-subtitle">
+            Faithfully documented proficiency levels representing active coursework, verified self-evaluations, and
+            hands-on lab practice.
+          </p>
+        </div>
+
+        <!-- Expertise Level Scale Legend -->
+        <div class="expertise-legend card">
+          <span class="legend-title">Proficiency Framework:</span>
+          <div class="legend-items">
+            <span class="legend-badge badge-beginner">
+              <span class="badge-dot"></span> Beginner (Foundational Familiarity)
+            </span>
+            <span class="legend-badge badge-basic">
+              <span class="badge-dot"></span> Basic (Core Syntax & Academic Application)
+            </span>
+            <span class="legend-badge badge-muted">
+              <span class="badge-dot"></span> Intermediate (Target Next Milestone)
+            </span>
+          </div>
+        </div>
+
+        <!-- Filter Tabs for Skills -->
+        <div class="filter-tabs-wrapper" role="tablist" aria-label="Filter skills by domain">
+          <button class="filter-tab active" data-skill-filter="all" role="tab" aria-selected="true">All Skills
+            (18)</button>
+          <button class="filter-tab" data-skill-filter="core-lang" role="tab" aria-selected="false">Core Languages
+            (5)</button>
+          <button class="filter-tab" data-skill-filter="web-frontend" role="tab" aria-selected="false">Web & Frontend
+            (3)</button>
+          <button class="filter-tab" data-skill-filter="backend-db" role="tab" aria-selected="false">Backend & DB
+            (4)</button>
+          <button class="filter-tab" data-skill-filter="tools-cloud" role="tab" aria-selected="false">Dev Tools & Cloud
+            (6)</button>
+        </div>
+
+        <!-- Skills Grid Cards -->
+        <div class="skills-card-grid" id="skills-grid">
+
+          <!-- Category 1: Core Programming Languages -->
+          <div class="skill-item-card" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-java" aria-hidden="true">☕</div>
+              <span class="skill-name">Java</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Object-Oriented Programming paradigms, classes, inheritance, and core algorithms in
+              academic coursework.</p>
+            <div class="meter-bar-track" aria-label="Java proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-python" aria-hidden="true">🐍</div>
+              <span class="skill-name">Python</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Syntax fundamentals, data structures, scripting, and basic exploratory data
+              manipulation.</p>
+            <div class="meter-bar-track" aria-label="Python proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-c" aria-hidden="true">⚙️</div>
+              <span class="skill-name">C Language</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Structured procedural programming, memory constructs, pointers, loops, and control
+              logic.</p>
+            <div class="meter-bar-track" aria-label="C proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-r" aria-hidden="true">📊</div>
+              <span class="skill-name">R</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Statistical programming fundamentals, data vectors, matrices, and elementary analysis
+              scripts.</p>
+            <div class="meter-bar-track" aria-label="R proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="core-lang">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-php" aria-hidden="true">🐘</div>
+              <span class="skill-name">PHP</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Server-side scripting fundamentals, dynamic page rendering, and form processing.</p>
+            <div class="meter-bar-track" aria-label="PHP proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development Fundamentals -->
+          <div class="skill-item-card" data-category="web-frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-html" aria-hidden="true">🌐</div>
+              <span class="skill-name">HTML5</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Semantic document structuring, accessible tags, forms, input validation, and media
+              embedding.</p>
+            <div class="meter-bar-track" aria-label="HTML proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="web-frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-css" aria-hidden="true">🎨</div>
+              <span class="skill-name">CSS3</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Cascading stylesheets, Flexbox, CSS Grid layouts, color harmonies, and responsive
+              media queries.</p>
+            <div class="meter-bar-track" aria-label="CSS proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="web-frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-js" aria-hidden="true">⚡</div>
+              <span class="skill-name">JavaScript</span>
+              <span class="level-pill pill-beginner">Beginner</span>
+            </div>
+            <p class="skill-desc">DOM manipulation, event listeners, functions, basic asynchronous handling, and
+              interactive elements.</p>
+            <div class="meter-bar-track" aria-label="JavaScript proficiency: Beginner">
+              <div class="meter-bar-fill fill-beginner"></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & Databases -->
+          <div class="skill-item-card" data-category="backend-db">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-sql" aria-hidden="true">🗄️</div>
+              <span class="skill-name">SQL</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Relational queries, SELECT filtering, table joins, aggregation functions, and schema
+              definitions.</p>
+            <div class="meter-bar-track" aria-label="SQL proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="backend-db">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-mysql" aria-hidden="true">🐬</div>
+              <span class="skill-name">MySQL</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Database creation, table relations, constraints, foreign keys, and relational data
+              management.</p>
+            <div class="meter-bar-track" aria-label="MySQL proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="backend-db">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-flask" aria-hidden="true">🌶️</div>
+              <span class="skill-name">Flask</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Python microframework routing, HTTP GET/POST handling, and lightweight web application
+              backends.</p>
+            <div class="meter-bar-track" aria-label="Flask proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="backend-db">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-node" aria-hidden="true">🟢</div>
+              <span class="skill-name">Node.js</span>
+              <span class="level-pill pill-beginner">Beginner</span>
+            </div>
+            <p class="skill-desc">JavaScript runtime environment basics, npm package management, and simple server
+              scripts.</p>
+            <div class="meter-bar-track" aria-label="Node.js proficiency: Beginner">
+              <div class="meter-bar-fill fill-beginner"></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools, Cloud & Data Science -->
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-git" aria-hidden="true">🐙</div>
+              <span class="skill-name">GitHub & Git</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Version control repositories, commits, branch navigation, pull requests, and remote
+              sync.</p>
+            <div class="meter-bar-track" aria-label="GitHub proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-vscode" aria-hidden="true">💻</div>
+              <span class="skill-name">VS Code</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Integrated code editing, debugging extensions, workspace configuration, and terminal
+              workflows.</p>
+            <div class="meter-bar-track" aria-label="VS Code proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-antigravity" aria-hidden="true">🚀</div>
+              <span class="skill-name">Google Antigravity</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Next-generation agentic AI coding environment, tool workflows, and pair-programming
+              systems.</p>
+            <div class="meter-bar-track" aria-label="Google Antigravity proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-cloud" aria-hidden="true">☁️</div>
+              <span class="skill-name">AWS & Azure</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Cloud infrastructure overview, virtual machines, cloud storage basics, and managed
+              service concepts.</p>
+            <div class="meter-bar-track" aria-label="Cloud proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-ai" aria-hidden="true">🤖</div>
+              <span class="skill-name">Pandas & NumPy & GenAI</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">DataFrames, numerical arrays, exploratory datasets, and prompt-assisted development
+              workflows.</p>
+            <div class="meter-bar-track" aria-label="Data Science proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-card" data-category="tools-cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge color-oop" aria-hidden="true">🧩</div>
+              <span class="skill-name">Problem Solving & OOP & UI/UX</span>
+              <span class="level-pill pill-basic">Basic</span>
+            </div>
+            <p class="skill-desc">Algorithmic logic, encapsulation, modular design, and clean user interface
+              sensibilities.</p>
+            <div class="meter-bar-track" aria-label="Problem Solving proficiency: Basic">
+              <div class="meter-bar-fill fill-basic"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Academic Education Section -->
+    <section id="education" class="section-wrapper" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Education</span>
+          <h2 id="education-heading" class="section-title">Academic Background</h2>
+          <p class="section-subtitle">Formal postgraduate education providing structured training in computer
+            applications.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-item card">
+            <div class="timeline-badge-year">2026 &ndash; 2028</div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="timeline-degree">Master of Computer Applications (MCA)</h3>
+                  <p class="timeline-institution">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <strong>Poornaprajna Institute of Management (PIM)</strong> &bull; Udupi, Karnataka
+                  </p>
+                </div>
+                <span class="status-pill-active">
+                  <span class="pulse-dot"></span> Currently Pursuing
+                </span>
+              </div>
+
+              <div class="timeline-body">
+                <div class="specialization-box">
+                  <span class="spec-label">Specialization:</span>
+                  <span class="spec-val">Computer Applications &amp; Software Development</span>
+                </div>
+
+                <p class="timeline-desc">
+                  Enrolled in the intensive postgraduate MCA program at PIM Udupi, an esteemed institution committed to
+                  academic excellence. The curriculum provides an in-depth foundation in computational theory,
+                  structured software engineering methodologies, data structures, algorithms, and practical database
+                  systems.
+                </p>
+
+                <div class="curriculum-highlights">
+                  <h4 class="curriculum-title">Key Core Areas Covered:</h4>
+                  <ul class="curriculum-list">
+                    <li>
+                      <span class="bullet-check">✓</span>
+                      <span>Software Engineering Principles & Lifecycle Models</span>
+                    </li>
+                    <li>
+                      <span class="bullet-check">✓</span>
+                      <span>Object-Oriented Programming (Java & Python)</span>
+                    </li>
+                    <li>
+                      <span class="bullet-check">✓</span>
+                      <span>Relational Database Management Systems & SQL</span>
+                    </li>
+                    <li>
+                      <span class="bullet-check">✓</span>
+                      <span>Data Structures, Algorithms & Problem Solving</span>
+                    </li>
+                    <li>
+                      <span class="bullet-check">✓</span>
+                      <span>Web Technologies, Client-Server Architectures & Testing</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Featured Projects Section -->
+    <section id="projects" class="section-wrapper bg-subtle" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 id="projects-heading" class="section-title">Projects & Technical Artifacts</h2>
+          <p class="section-subtitle">
+            Authentic academic and personal projects currently under active development.
+          </p>
+        </div>
+
+        <!-- Project Filtering Tabs -->
+        <div class="filter-tabs-wrapper" role="tablist" aria-label="Filter projects">
+          <button class="filter-tab active" data-proj-filter="all" role="tab" aria-selected="true">All Projects
+            (1)</button>
+          <button class="filter-tab" data-proj-filter="web-dev" role="tab" aria-selected="false">Web Development
+            (1)</button>
+          <button class="filter-tab" data-proj-filter="in-progress" role="tab" aria-selected="false">In Progress
+            (1)</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: Web Development Project -->
+          <article class="card project-card" data-proj-cat="web-dev in-progress">
+            <div class="project-card-header">
+              <div class="project-tags-row">
+                <span class="project-category-badge">Web Development</span>
+                <span class="project-status-badge in-progress-badge">
+                  <span class="status-pulse"></span> In Progress
+                </span>
+              </div>
+              <h3 class="project-title">Responsive Developer Portfolio &amp; Web Platform</h3>
+              <p class="project-overview">
+                An accessible, performant, and mobile-first personal portfolio application built strictly with vanilla
+                web technologies. It is engineered to present academic credentials, honest technical expertise levels,
+                and software engineering coursework to internship coordinators and recruiters.
+              </p>
+            </div>
+
+            <div class="project-card-details">
+              <div class="project-spec-item">
+                <span class="spec-label">Category:</span>
+                <span class="spec-text">Web Development</span>
+              </div>
+              <div class="project-spec-item">
+                <span class="spec-label">Current Status:</span>
+                <span class="spec-text font-semibold text-accent">In Progress (Active Development)</span>
+              </div>
+              <div class="project-spec-item">
+                <span class="spec-label">Design Standard:</span>
+                <span class="spec-text">WCAG 2.1 AA Accessible &bull; Mobile-First Responsive</span>
+              </div>
+            </div>
+
+            <!-- Tech Stack Pills -->
+            <div class="tech-stack-container">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Flexbox & Grid</span>
+              <span class="tech-pill">GitHub Pages</span>
+              <span class="tech-pill">Mobile-First</span>
+            </div>
+
+            <!-- Project Card Actions -->
+            <div class="project-card-actions">
+              <a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm" aria-label="View Swathi's GitHub Repository (opens in new tab)">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>GitHub Code</span>
+              </a>
+              <a href="#hero" class="btn btn-outline btn-sm">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Live View (This Site)</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Professional Certifications -->
+    <section id="certifications" class="section-wrapper" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 id="certifications-heading" class="section-title">Professional Certifications</h2>
+          <p class="section-subtitle">Verified external certifications validating software engineering quality assurance
+            skills.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <div class="card cert-card">
+            <div class="cert-card-accent"></div>
+            <div class="cert-card-content">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+
+              <div class="cert-details">
+                <div class="cert-year-badge">2026</div>
+                <h3 class="cert-title">Software Testing</h3>
+                <div class="cert-issuer">
+                  <span class="issuer-icon">🏛️</span>
+                  <span><strong>Issuing Body:</strong> Swayam NPTEL</span>
+                </div>
+                <p class="cert-summary">
+                  Comprehensive national certification covering foundational and practical software testing
+                  methodologies, verification and validation principles, test case design, black-box &amp; white-box
+                  testing strategies, and software quality management.
+                </p>
+
+                <div class="cert-skills-covered">
+                  <span class="cert-pill">Test Case Execution</span>
+                  <span class="cert-pill">Black-box Testing</span>
+                  <span class="cert-pill">White-box Testing</span>
+                  <span class="cert-pill">Quality Assurance</span>
+                  <span class="cert-pill">Bug Life Cycle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Interests, Ambitions & Career Trajectory -->
+    <section id="interests" class="section-wrapper bg-subtle" aria-labelledby="interests-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Future Path</span>
+          <h2 id="interests-heading" class="section-title">Interests &amp; Career Trajectory</h2>
+          <p class="section-subtitle">Target professional domains, aspiring engineering roles, and language
+            capabilities.</p>
+        </div>
+
+        <div class="career-cards-grid">
+          <!-- Target Roles Card -->
+          <div class="card career-card">
+            <div class="career-card-icon pastel-bg-purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="career-card-title">Target Roles</h3>
+            <p class="career-card-desc">Seeking internship and junior entry opportunities where I can apply my software
+              training and contribute diligently:</p>
+            <ul class="career-list">
+              <li>
+                <span class="arrow-bullet">➔</span>
+                <span><strong>Software Developer</strong> &ndash; Application logic, OOP, and system
+                  implementation</span>
+              </li>
+              <li>
+                <span class="arrow-bullet">➔</span>
+                <span><strong>Web Developer</strong> &ndash; Responsive frontends, clean UI, and backend services</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Primary Areas of Interest -->
+          <div class="card career-card">
+            <div class="career-card-icon pastel-bg-blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="career-card-title">Primary Areas of Interest</h3>
+            <p class="career-card-desc">Fields that ignite my curiosity and drive my ongoing project experiments:</p>
+            <ul class="career-list">
+              <li>
+                <span class="arrow-bullet">➔</span>
+                <span><strong>Web Development:</strong> Crafting semantic, accessible, mobile-responsive user
+                  experiences</span>
+              </li>
+              <li>
+                <span class="arrow-bullet">➔</span>
+                <span><strong>Full-Stack Development:</strong> Connecting frontend interfaces seamlessly with backend
+                  databases</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Natural Languages Spoken -->
+          <div class="card career-card">
+            <div class="career-card-icon pastel-bg-mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="career-card-title">Languages Spoken</h3>
+            <p class="career-card-desc">Fluent communication skills for effective teamwork and cross-cultural
+              collaboration:</p>
+            <div class="lang-pills-wrap">
+              <div class="lang-pill">
+                <span class="lang-name">English</span>
+                <span class="lang-fluency">Professional Working Proficiency</span>
+              </div>
+              <div class="lang-pill">
+                <span class="lang-name">Kannada</span>
+                <span class="lang-fluency">Native / Fluent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact & Social Network Section -->
+    <section id="contact" class="section-wrapper" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Contact &amp; Connect</h2>
+          <p class="section-subtitle">
+            I am always welcoming inquiries regarding internship opportunities, technical collaborations, and academic
+            discussions.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Contact Channels Info Card -->
+          <div class="card contact-info-card">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Feel free to reach out directly through email, phone, or professional networks. I typically reply within
+              24 hours.
+            </p>
+
+            <div class="contact-methods-list">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="method-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email Address</span>
+                  <a href="mailto:swathishettyswathi49@gmail.com" class="method-value" title="Send email">
+                    swathishettyswathi49@gmail.com
+                  </a>
+                </div>
+                <button class="copy-btn icon-btn-sm" data-copy="swathishettyswathi49@gmail.com"
+                  aria-label="Copy email address" title="Copy email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="contact-method-item">
+                <div class="method-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Phone Number</span>
+                  <a href="tel:7019239710" class="method-value" title="Call Swathi">
+                    +91 7019239710
+                  </a>
+                </div>
+                <button class="copy-btn icon-btn-sm" data-copy="7019239710" aria-label="Copy phone number"
+                  title="Copy phone">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Current Location</span>
+                  <span class="method-value">Udupi, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="contact-social-links">
+              <span class="social-header-label">Professional Profiles:</span>
+              <div class="social-buttons-grid">
+                <a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary btn-full">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>GitHub Profile</span>
+                </a>
+                <a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary btn-full">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                  <span>LinkedIn Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Message Form -->
+          <div class="card contact-form-card">
+            <h3 class="contact-info-title">Send a Direct Message</h3>
+            <p class="contact-info-desc">
+              Fill out this form to prepare a direct email message to Swathi Shetty.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Aditi Sharma" required
+                  autocomplete="name">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email <span class="required-star">*</span></label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. aditi@example.com" required
+                  autocomplete="email">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required-star">*</span></label>
+                <input type="text" id="contact-subject" class="form-input"
+                  placeholder="e.g. MCA Internship Opportunity / Project Discussion" required>
+                <span class="field-error" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required-star">*</span></label>
+                <textarea id="contact-message" class="form-textarea" rows="4"
+                  placeholder="Hello Swathi, I saw your portfolio and would love to connect regarding..."
+                  required></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message via Email</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Resume Modal -->
+  <div id="resume-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="resume-modal-title">
+    <div class="modal-backdrop" id="resume-modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h2 id="resume-modal-title" class="modal-title">Swathi Shetty &ndash; Academic Resume</h2>
+          <span class="modal-subtitle">MCA &bull; Poornaprajna Institute of Management (PIM)</span>
+        </div>
+        <div class="modal-actions">
+          <button id="resume-print-btn" class="btn btn-secondary btn-sm" title="Print or save as PDF">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button id="resume-modal-close" class="icon-btn" aria-label="Close Resume Modal">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Document Body -->
+      <div class="modal-body print-resume-document" id="printable-resume">
+        <!-- Resume Header -->
+        <header class="resume-doc-header">
+          <h1 class="resume-doc-name">Swathi Shetty</h1>
+          <p class="resume-doc-tagline">Master of Computer Applications (MCA) Candidate</p>
+          <div class="resume-doc-contact">
+            <span>📍 Udupi, Karnataka</span> &bull;
+            <span>📞 +91 7019239710</span> &bull;
+            <span>✉️ <a href="mailto:swathishettyswathi49@gmail.com">swathishettyswathi49@gmail.com</a></span> &bull;
+            <span>🔗 <a href="https://github.com/Swathi-Shetty37" target="_blank"
+                rel="noopener noreferrer">github.com/Swathi-Shetty37</a></span> &bull;
+            <span>🔗 <a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank"
+                rel="noopener noreferrer">linkedin.com/in/swathi-shetty-bba841320</a></span>
+          </div>
+        </header>
+
+        <!-- Career Objective -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Objective &amp; Statement</h3>
+          <p class="resume-text">
+            &ldquo;I am an MCA student interested in software development, web technology, and solving problems through
+            code.&rdquo; Eager to secure internship opportunities in Software Development and Web Development to apply
+            foundational knowledge in Object-Oriented Programming, relational databases, and modern frontend tools.
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Academic Education</h3>
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Master of Computer Applications (MCA)</strong>
+              <span class="resume-item-date">2026 &ndash; 2028 (Pursuing)</span>
+            </div>
+            <div class="resume-item-sub">Poornaprajna Institute of Management (PIM), Udupi, Karnataka</div>
+            <div class="resume-item-detail">
+              <strong>Specialization:</strong> Computer Applications &amp; Software Development
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Verified Technical Skills</h3>
+          <div class="resume-skill-group">
+            <strong>Core Programming Languages:</strong> Java (Basic), Python (Basic), C (Basic), R (Basic), PHP (Basic)
+          </div>
+          <div class="resume-skill-group">
+            <strong>Web Fundamentals:</strong> HTML (Basic), CSS (Basic), JavaScript (Beginner)
+          </div>
+          <div class="resume-skill-group">
+            <strong>Backend &amp; Databases:</strong> Flask (Basic), Node.js (Beginner), SQL (Basic), MySQL (Basic)
+          </div>
+          <div class="resume-skill-group">
+            <strong>Development Tools &amp; Cloud:</strong> GitHub (Basic), VS Code (Basic), Google Antigravity (Basic),
+            AWS (Basic), Azure (Basic)
+          </div>
+          <div class="resume-skill-group">
+            <strong>Data Science &amp; Concepts:</strong> Pandas (Basic), NumPy (Basic), Generative AI Tools (Basic),
+            Problem Solving, OOP, UI/UX Design
+          </div>
+        </section>
+
+        <!-- Real Projects -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Academic &amp; Practical Projects</h3>
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Responsive Developer Portfolio &amp; Web Platform</strong>
+              <span class="resume-badge-in-progress">In Progress</span>
+            </div>
+            <div class="resume-item-sub">Category: Web Development | Tech: HTML5, CSS3, JavaScript, GitHub Pages</div>
+            <p class="resume-text">
+              Developing a high-performance, mobile-first responsive portfolio application adhering to WCAG 2.1 AA
+              accessibility guidelines. Implemented custom pastel theming, interactive skill indicators, client-side
+              validation, and dynamic modal dialogs.
+            </p>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Certifications</h3>
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <strong>Software Testing</strong>
+              <span class="resume-item-date">2026</span>
+            </div>
+            <div class="resume-item-sub">Issuing Authority: Swayam NPTEL</div>
+            <p class="resume-text">
+              Validated knowledge in test lifecycle models, black-box &amp; white-box testing, test case authoring, and
+              software quality assurance.
+            </p>
+          </div>
+        </section>
+
+        <!-- Interests & Languages -->
+        <section class="resume-doc-section">
+          <h3 class="resume-section-heading">Career Focus &amp; Spoken Languages</h3>
+          <p class="resume-text">
+            <strong>Target Roles:</strong> Software Developer, Web Developer &bull;
+            <strong>Areas of Interest:</strong> Web Development, Full-Stack Development &bull;
+            <strong>Languages Spoken:</strong> English (Professional), Kannada (Native)
+          </p>
+        </section>
+      </div>
+
+      <div class="modal-footer">
+        <button id="resume-modal-close-bottom" class="btn btn-outline btn-sm">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-avatar">SS</span>
+            <span class="brand-name">Swathi Shetty</span>
+          </div>
+          <p class="footer-tagline">
+            First-Year Master of Computer Applications (MCA) Student at Poornaprajna Institute of Management (PIM),
+            Udupi.
+          </p>
+          <p class="footer-bio-quote">
+            &ldquo;Interested in software development, web technology, and solving problems through code.&rdquo;
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills &amp; Expertise</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-nav">
+            <li><a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer">GitHub
+                Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank"
+                rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li><a href="mailto:swathishettyswathi49@gmail.com">Direct Email</a></li>
+            <li><a href="tel:7019239710">+91 7019239710</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Swathi Shetty. All Rights Reserved. Crafted with modern web
+          standards (HTML5, Vanilla CSS &amp; JavaScript).
+        </p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
