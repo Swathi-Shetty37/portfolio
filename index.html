@@ -21,6 +21,7 @@
   <meta property="og:title" content="Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management">
   <meta property="og:description"
     content="Portfolio of Swathi Shetty, MCA student at PIM Udupi specializing in software development, web technology, and problem solving.">
+  <meta property="og:image" content="assets/profile.jpg">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
@@ -28,6 +29,10 @@
   <meta property="twitter:title" content="Swathi Shetty | MCA Portfolio | Poornaprajna Institute of Management">
   <meta property="twitter:description"
     content="Portfolio of Swathi Shetty, MCA student at PIM Udupi specializing in software development.">
+  <meta property="twitter:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/profile.jpg">
 
   <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +53,9 @@
   <header class="site-header" id="header">
     <div class="nav-container">
       <a href="#hero" class="brand-logo" aria-label="Swathi Shetty - Home">
-        <span class="logo-avatar">SS</span>
+        <span class="logo-avatar" aria-hidden="true">
+          <img src="assets/profile.jpg" alt="Swathi Shetty" class="avatar-img" width="40" height="40">
+        </span>
         <div class="brand-text">
           <span class="brand-name">Swathi Shetty</span>
           <span class="brand-badge">MCA Student</span>
@@ -158,114 +165,133 @@
   <!-- Main Content Container -->
   <main id="main-content">
 
-    <!-- 1. Hero Showcase Section (Text-Focused Introduction) -->
+    <!-- 1. Hero Showcase Section -->
     <section id="hero" class="hero-section" aria-label="Introduction">
       <div class="container hero-container">
-        <!-- Floating Pill Indicator -->
-        <div class="hero-status-pill">
-          <span class="status-indicator-dot"></span>
-          <span class="status-text">First-Year MCA Student &bull; Poornaprajna Institute of Management</span>
+        <!-- Hero Text & Overview -->
+        <div class="hero-content">
+          <!-- Floating Pill Indicator -->
+          <div class="hero-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span class="status-text">First-Year MCA Student &bull; Poornaprajna Institute of Management</span>
+          </div>
+
+          <!-- Headline & Name -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Swathi Shetty</span>
+          </h1>
+          <p class="hero-headline">
+            Master of Computer Applications (MCA) Candidate
+          </p>
+
+          <!-- Elevator Pitch / Biography -->
+          <blockquote class="hero-statement">
+            &ldquo;I am an MCA student interested in software development, web technology, and solving problems through
+            code.&rdquo;
+          </blockquote>
+
+          <!-- Location & Campus Tag -->
+          <div class="hero-meta-badges">
+            <span class="meta-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Udupi, Karnataka, India
+            </span>
+            <span class="meta-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              PIM Udupi (2026 – 2028)
+            </span>
+            <span class="meta-badge highlight-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Aspiring Software Developer
+            </span>
+          </div>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-work">
+              <span>Explore Work</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
+              <span>Get in Touch</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <button class="btn btn-secondary" id="hero-resume-trigger">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Resume</span>
+            </button>
+          </div>
+
+          <!-- Quick Social Links Bar -->
+          <div class="hero-social-strip">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="GitHub Profile (opens in new tab)">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank" rel="noopener noreferrer"
+              class="social-pill" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:swathishettyswathi49@gmail.com" class="social-pill" aria-label="Send email to Swathi Shetty">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>swathishettyswathi49@gmail.com</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Headline & Name -->
-        <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">Swathi Shetty</span>
-        </h1>
-        <p class="hero-headline">
-          Master of Computer Applications (MCA) Candidate
-        </p>
-
-        <!-- Elevator Pitch / Biography -->
-        <blockquote class="hero-statement">
-          &ldquo;I am an MCA student interested in software development, web technology, and solving problems through
-          code.&rdquo;
-        </blockquote>
-
-        <!-- Location & Campus Tag -->
-        <div class="hero-meta-badges">
-          <span class="meta-badge">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Udupi, Karnataka, India
-          </span>
-          <span class="meta-badge">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-            </svg>
-            PIM Udupi (2026 – 2028)
-          </span>
-          <span class="meta-badge highlight-badge">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-            Aspiring Software Developer
-          </span>
+        <!-- Hero Profile Showcase (Right) -->
+        <div class="hero-image-wrapper">
+          <div class="profile-card">
+            <div class="profile-decorative-circle circle-1"></div>
+            <div class="profile-decorative-circle circle-2"></div>
+            <div class="profile-frame">
+              <img src="assets/profile.jpg" alt="Swathi Shetty - MCA Student & Software Developer" class="profile-photo" width="340" height="425" loading="eager">
+              <div class="profile-floating-badge">
+                <span class="badge-pulse-dot"></span>
+                <span class="badge-text">MCA Candidate &bull; Open to Roles</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Call to Action Buttons -->
-        <div class="hero-cta-group">
-          <a href="#projects" class="btn btn-primary" id="hero-cta-work">
-            <span>Explore Work</span>
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
-            <span>Get in Touch</span>
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </a>
-          <button class="btn btn-secondary" id="hero-resume-trigger">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Resume</span>
-          </button>
-        </div>
-
-        <!-- Quick Social Links Bar -->
-        <div class="hero-social-strip">
-          <span class="social-label">Connect:</span>
-          <a href="https://github.com/Swathi-Shetty37" target="_blank" rel="noopener noreferrer" class="social-pill"
-            aria-label="GitHub Profile (opens in new tab)">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-            </svg>
-            <span>GitHub</span>
-          </a>
-          <a href="https://www.linkedin.com/in/swathi-shetty-bba841320" target="_blank" rel="noopener noreferrer"
-            class="social-pill" aria-label="LinkedIn Profile (opens in new tab)">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-            <span>LinkedIn</span>
-          </a>
-          <a href="mailto:swathishettyswathi49@gmail.com" class="social-pill" aria-label="Send email to Swathi Shetty">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <span>swathishettyswathi49@gmail.com</span>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -1297,7 +1323,9 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <span class="logo-avatar">SS</span>
+            <span class="logo-avatar" aria-hidden="true">
+              <img src="assets/profile.jpg" alt="Swathi Shetty" class="avatar-img" width="40" height="40">
+            </span>
             <span class="brand-name">Swathi Shetty</span>
           </div>
           <p class="footer-tagline">

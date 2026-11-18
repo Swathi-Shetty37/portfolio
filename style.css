@@ -478,6 +478,17 @@ ul {
   font-weight: 800;
   font-size: 0.95rem;
   box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 .brand-text {
@@ -691,8 +702,17 @@ ul {
 }
 
 .hero-container {
-  max-width: 900px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 3.5rem;
   text-align: left;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-status-pill {
@@ -852,6 +872,131 @@ ul {
   background: var(--accent-secondary-subtle);
   text-decoration: none;
   transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   7.1 Hero Profile Showcase
+   -------------------------------------------------------------------------- */
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.profile-card {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-frame {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-xl);
+  padding: 8px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.45) 0%, rgba(6, 182, 212, 0.45) 100%);
+  box-shadow: 0 20px 40px -10px rgba(79, 70, 229, 0.25),
+              0 0 25px rgba(6, 182, 212, 0.2);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  z-index: 2;
+}
+
+[data-theme="dark"] .profile-frame {
+  background: linear-gradient(135deg, rgba(129, 140, 248, 0.5) 0%, rgba(56, 189, 248, 0.5) 100%);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.7),
+              0 0 35px rgba(56, 189, 248, 0.25);
+}
+
+.profile-frame:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 28px 50px -10px rgba(79, 70, 229, 0.35),
+              0 0 35px rgba(6, 182, 212, 0.3);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius-xl) - 6px);
+  display: block;
+  background-color: var(--bg-card);
+}
+
+.profile-floating-badge {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: var(--shadow-md);
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.badge-pulse-dot {
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-emerald);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.badge-pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-emerald);
+  opacity: 0.5;
+  animation: pulseDot 2s infinite ease-out;
+}
+
+.badge-text {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.profile-decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.profile-decorative-circle.circle-1 {
+  width: 220px;
+  height: 220px;
+  background: var(--color-indigo-glow);
+  top: -20px;
+  right: -20px;
+}
+
+.profile-decorative-circle.circle-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--color-cyan-glow);
+  bottom: -20px;
+  left: -20px;
 }
 
 /* --------------------------------------------------------------------------
@@ -2094,6 +2239,34 @@ ul {
    18. Responsive Breakpoints
    -------------------------------------------------------------------------- */
 @media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  .hero-content {
+    align-items: center;
+  }
+  .hero-statement {
+    text-align: left;
+    max-width: 640px;
+  }
+  .hero-meta-badges {
+    justify-content: center;
+  }
+  .hero-cta-group {
+    justify-content: center;
+  }
+  .hero-social-strip {
+    justify-content: center;
+  }
+  .hero-image-wrapper {
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+  .profile-frame {
+    max-width: 280px;
+  }
   .hero-title {
     font-size: 2.75rem;
   }
